@@ -10,7 +10,10 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-`BuyMeACoffee deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+Test network : BuyMeACoffee deployed to: 0x3e78c06BfCab17Eac4C079982142466edeE88C97
+
+local network : `BuyMeACoffee deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+
 == start ==
 
 Address 0 balance:  9999.99857209
