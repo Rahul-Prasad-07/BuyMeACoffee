@@ -174,8 +174,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Buy Rahul a Coffee!
+          Buy Rahul a Coffee !☕
         </h1>
+
+        <br />
+        <br />
 
         {currentAccount ? (
           <div>
@@ -187,9 +190,10 @@ export default function Home() {
                 <br />
 
                 <input
-                  id="name"
-                  type="text"
-                  placeholder="anon"
+                  className={styles.input}
+                id="name"
+                type="text"
+                placeholder="anon"
                   onChange={onNameChange}
                 />
               </div>
@@ -199,8 +203,10 @@ export default function Home() {
                   Send Rahul a message
                 </label>
                 <br />
+                
 
                 <textarea
+                  className={styles.textarea}
                   rows={3}
                   placeholder="Enjoy your coffee!"
                   id="message"
@@ -211,6 +217,7 @@ export default function Home() {
               </div>
               <div>
                 <button
+                   className={styles.submit}
                   type="button"
                   onClick={buyCoffee}
                 >
@@ -220,7 +227,7 @@ export default function Home() {
             </form>
           </div>
         ) : (
-            <button onClick={connectWallet}> Connect your wallet </button>
+            <button className={styles.connectWallet} onClick={connectWallet}> Connect your wallet </button>
           )}
       </main>
 
